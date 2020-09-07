@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Kali's App Flow Redesign Case Study">
+		<meta name="author" content="Jessica Kali Wright">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Kali's Spotify Redesign </title>
+		<!-- styles -->
+		<link rel ="stylesheet" href="stylesheet.css">
+		<link rel ="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap">
+	</head>
+
+	<body>
+		<!-- overarching container -->
+		<div class="container">
+			<!-- scrolling nav -->
+			<nav>
+				<ul>
+					<li><a href="#about">About Spotify</a></li>
+					<li><a href="#question">Design Question</a></li>
+					<li><a href="#pain">Pain Points</a></li>
+					<li><a href="#solution">Solutions</a></li>
+				</ul>
+			</nav>
+			<!-- Author picture and date -->
+			<section>
+				<h1> Spotify Mobile App Redesign Case Study </h1>
+				<img class="align-left" id="profpic" src="images/profile.png" alt="Picture of the author">
+				<br>
+				<p> Written by: Jessica "Kali" Wright
+					<br>
+					Sep 06, 2020 &#9900; 7 minute read
+				</p>
+				<!-- Email and LinkedIn Icons; Icons from endlessicons.com -->
+				<p class="align-right">
+					<a target="_blank" href="mailto:wrightjk@dukes.jmu.edu"><img class="icons" src="images/email.png" alt="Email icon to send an email"></a> 
+					<a target="_blank" href="https://www.linkedin.com/in/jessica-kali-wright-472351150/"><img class="icons" src="images/linkedin.png" alt="LinkedIn icon to visit LinkedIn profile"></a>
+				</p>
+			</section>
+			<!-- Explanation of what Spotify (and specifically the mobile app) is -->
+			<section id="about">
+				<h3> About Spotify </h3>
+				<blockquote cite="https://support.spotify.com/us/article/what-is-spotify/">
+					Spotify is a digital music, podcast, and video streaming service that gives you access to millions of songs and other content from artists all over the world.
+					<br>
+					Basic functions such as playing music are totally free, but you can also choose to upgrade to Spotify Premium. Either way, you can:
+					<ul>
+						<li>Choose what you want to listen to with Browse and Search.</li>
+						<li>Get recommendations from personalized features, such as Discover Weekly, Release Radar, and Daily Mix.</li>
+						<li>Build collections of music.</li>
+						<li>See what friends, artists, and celebrities listen to.</li>
+						<li>Create your own Radio stations.</li>
+					</ul>
+					<br>
+					Spotify is available across a range of devices, including computers, phones, tablets, speakers, TVs, and cars, and you can easily transition from one to another with Spotify Connect.
+				</blockquote>
+				<p>
+					While Spotify can be used to stream podcasts and videos, it's primary uses are in relation to music streaming. Each days, users are presented with multiple "daily mixes" of music recommendations based on the user's listening habits. Users are also able to create personal playlists as well as "like" songs. Videos and podcasts are not as easily accessed and organized. Users can follow podcasts they enjoy, but must go to their personal music playlists and swipe to the left in order to find these podcasts. While one of the uses Spotify boasts on their official website is video streaming, the only video streaming they currently offer are seconds of videos (usually from the music video) that play while the user is listening to a song.
+				</p>
+					<figure>
+						<img class="survey" src="images/survey2.png" alt="Survey results of 18 people's primary uses of the Spotify app">
+						<figcaption>Survey results of 18 people's primary uses of the Spotify app, showing 100% of those surveyed use Spotify for it's music features over its podcast features.</figcaption>
+					</figure>
+					<div id="compare">
+						<figure>
+							<img class="survey" src="images/survey3.png" alt="Survey results showing large majority of those surveyed use Spotify as their primary music streaming app">
+							<figcaption>77.8% of those surveyed use Spotify as their primary music streaming app.</figcaption>
+						</figure>
+						<figure>
+							<img class="survey" src="images/survey4.png" alt="Survey results showing small majority of those surveyed use Spotify as their primary podcast streaming app">
+							<figcaption>Only 61.1% of those surveyed used Spotify as their primary podcast streaming app.</figcaption>
+						</figure>
+					</div>
+				<p>
+					Spotify is currently available on a large variety of platforms, including PCs, laptops, mobile phones, tablets, gaming consoles, TVs, and more. In each region where Spotify is available, spotify usage is dominated by mobile. This is likely due to the ease and portability of a mobile app, but unfortunately for mobile Spotify users, not every function that is available on Spotify desktop is also available for Spotify mobile.
+				</p>
+				<figure>
+					<img class="survey" src="images/usage.png" alt="chart showing Spotify mobile vs desktop usage by region">
+					<figcaption>Source: <a target="_blank" href="https://www.globalwebindex.com/reports/music-streaming-around-the-world">GlobalWebIndex</a></figcaption>
+				</figure>
+			</section>
+			<!-- Define the design question -->
+			<h2 id="question"> How might we improve the experience of individuals utilizing the mobile Spotify app over the desktop version? </h2>
+			<!-- Display pain points of users -->
+			<section id="pain">
+				<h3> Pain Points of Spotify Mobile App Users </h3>
+				<h4> Pain Point #1 </h4>
+				<p>
+					Due to the music streaming features being heavily pushed to the forefront of the Spotify mobile app, it can be difficult and confusing to find and stream podcasts on the app in comparison, including those that have been saved to the user's library. Both the home page and library prioritize music over podcasts by design, showing music recommendations and saved music on loading. The user must scroll (down on the homepage, right in the library) in order to find podcasts. One individual surveyed did not realize you could access podcasts at all in the mobile library due to the "podcast" option at the top of the library disappearing once the user scrolls.
+				</p>
+				<div id="phonepics">
+					<figure>
+						<img class="phonesc" src="images/flow1.png" alt="Spotify homepage">
+						<figcaption>The Spotify homepage, seen on launch.</figcaption>
+					</figure>
+					<figure>
+						<img class="phonesc" src="images/flow2.png" alt="Spotify default library">
+						<figcaption>The Spotify library, featuring music on launch.</figcaption>
+					</figure>
+					<figure>
+						<img class="phonesc" src="images/flow3.png" alt="Spotify podcast library">
+						<figcaption>The Spotify podcast library, reached by scrolling to the right of the music library.</figcaption>
+					</figure>
+					<figure>
+						<img class="phonesc" src="images/flow4.png" alt="Spotify default library (scrolled down)">
+						<figcaption>The music and podcast buttons disappear upon scrolling in the library.</figcaption>
+					</figure>
+				</div>
+				<h4> Paint Point #2 </h4>
+				<p>
+					For users familiar with the desktop Spotify app, the mobile app can be frustrating and lacking in comparison. Some examples of what the desktop app offers that the mobile app does not include the ability to sort playlists into folders, view song history (another feature one individual surveyed wished the mobile app had), and edit playlist cover art. 
+				</p>
+				<figure>
+					<img class="websc" src="images/desktop1.png" alt="Spotify desktop homepage">
+					<figcaption>The Spotify homepage on the desktop app, seen on launch.</figcaption>
+				</figure>
+				<figure>
+					<img class="websc" src="images/desktop2.png" alt="Spotift desktop edit playlist picture option">
+					<figcaption>The Spotify desktop app's ability to change the cover photo of a playlist, not found on the mobile app.</figcaption>
+				</figure>
+				<figure>
+					<img class="websc" src="images/desktop3.png" alt="Spotify recent listening history">
+					<figcaption>The Spotify desktop app's recent listening history, not found on the mobile app.</figcaption>
+				</figure>
+			</section>
+			<!-- Solution -->
+			<section id="solution">
+				<h3> Proposed Solution </h3>
+				<p> 
+					While only the second pain point directly addresses the differences between the mobile app and the desktop app, I believe both pain points could be solved by implementing features found in the desktop app for the mobile app.
+					<br>
+					Spotify's desktop app gives the user options for which part of their library they would like to see before taking them to it, which could lessen confusion for users when it comes to navigating their library.
+				</p>
+					<figure>
+						<img id="flow" src="images/newflow1.png" alt="Current Spotify mobile app library layout vs proposed mobile app library layout">
+						<figcaption>The proposed Spotify mobile app library layout makes the library easier to navigate for all medias (rather than just music), as well as simplifies and cleans the library for ease of use. The new library also gives a "Recently Played" option, something that is not currently found on the mobile app.</figcaption>
+					</figure>
+				<p>
+					The features currently found on the desktop app that are not found on the mobile app that those surveyed wished to see included sorting playlists into folders, viewing song history, and editing cover art for playlists. The solution proposed for the first pain point included giving a "Recently Played" option for the library, so all that is left is allowing users to sort playlists into folders and edit their playlist cover photos.
+				</p>
+					<figure>
+						<img class="phonesc" src="images/newflow2.png" alt="Proposed Spotify mobile app playlist layout for editing playlist cover photo">
+						<figcaption>Since the hover function that enables users to click on the cover photo and edit it that is in use on the desktop version of Spotify isn't possible on the mobile app version, a small edit icon can be placed in the top right of the cover photo when a user is viewing the given playlist to enable users to personalize their playlists while on mobile.</figcaption>
+					</figure>
+			</section>
+			<footer>
+				Kali Wright SMAD 308 Project &#9900; Fall 2020
+			</footer>
+		</div>
+	</body>
+</html>
